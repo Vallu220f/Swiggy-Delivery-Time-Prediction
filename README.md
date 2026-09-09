@@ -71,6 +71,8 @@ Swiggy-Delivery-Prediction/
 ├── Swiggy Delivery Time Prediction.ipynb
 ├── swiggy_demographic (1).csv
 ├── model.pkl
+├── app.py
+├── requirements.txt
 └── README.md
 ```
 
