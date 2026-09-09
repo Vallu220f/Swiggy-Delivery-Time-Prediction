@@ -1,43 +1,38 @@
-#  Swiggy Delivery Time Prediction
+# Swiggy Delivery Time Prediction
 
+## 📌 Project Overview
 
-A Machine Learning project that predicts food delivery time in minutes using order, rider, location, weather, traffic, vehicle, and time-related features.
+A Machine Learning project that predicts **Swiggy delivery time** based on delivery partner, vehicle, traffic, weather, distance, and pickup information.
 
-## Project Overview
+## 🤖 Model
 
-This project builds a regression model to estimate delivery time for food orders. The workflow includes data preprocessing, exploratory data analysis, feature engineering, model comparison, cross-validation, bias-variance analysis, Optuna hyperparameter tuning, feature importance analysis, and model deployment.
+* **XGBoost Regressor**
+* Target: `Time_taken`
 
-## Models Compared
+## 🛠️ Technologies
 
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
-- KNN Regressor
-- XGBoost Regressor
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* XGBoost
+* Joblib
+* Streamlit
 
-The final model is a tuned XGBoost Regressor.
+## 🔄 Workflow
 
-## Machine Learning Workflow
+**Data → Preprocessing → EDA → Model Training → Evaluation → Streamlit Deployment**
 
-1. Data loading and understanding
-2. Data cleaning and missing-value handling
-3. Exploratory Data Analysis
-4. Feature engineering
-5. Train-test split
-6. Preprocessing using Scikit-learn Pipeline and ColumnTransformer
-7. Model comparison
-8. 5-fold cross-validation
-9. Bias-variance / overfitting analysis
-10. XGBoost hyperparameter tuning using Optuna
-11. Final model training and evaluation
-12. Feature importance analysis
-13. Model serialization using Pickle
-14. Web application deployment
+## 🚀 Deployment
 
-## Web Application
+The trained model is saved as `model.pkl` and used in a Streamlit application.
 
-The project includes a Flask web application (`app.py`) that loads the trained pipeline and predicts delivery time from user inputs.
-├── Swiggy_Delivery_Time_Prediction_XGBoost.ipynb
-├── requirements.txt
-└── README.
+Run:
+
+```bash
+streamlit run app.py
+```
+
+## 👨‍💻 Author
+
+**Vallabh Kulkarni**
